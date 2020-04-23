@@ -1,7 +1,7 @@
 FROM python:3.7
 LABEL maintainer="Eugene Ilyushin <john.ilyushin@gmail.com>"
 
-RUN pip3 install jupyterhub jupyter
+RUN pip3 install jupyterhub notebook
 
 # create a user, since we don't want to run as root
 RUN useradd -m jovyan
